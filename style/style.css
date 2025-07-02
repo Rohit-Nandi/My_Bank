@@ -1,0 +1,417 @@
+/*COMMON CSS*/
+/* Common CSS for Online Banking Platform */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+:root{
+  --blue:#1e88e5 ;
+  --white:#ffffff;
+  --black:#010101;
+  --deep-blue:#749BC2;
+  --blue2:#4682A9;
+}
+ul {
+  list-style-type: disc;        /* Options: disc, circle, square, none */
+  margin-left: 20px;
+  padding-left: 0;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+
+/*CUSTOM CSS*/
+.home{
+  min-height: 100vh;                /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--blue);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links > li >a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}
+.logo {
+  color: var(--white);
+  font-weight: 700;
+  font-size:24px;
+  margin-bottom: 10px;
+}
+.logo > a{
+  color: var(--white);
+}
+.auth{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.auth > li >a{
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  background-color: var(--white);
+  padding: 3px 10px;
+}
+.auth >li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 40px;
+  background-color: #ffffff;
+}
+.hero-img {
+  display: inline-block;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  flex: 1;
+  padding: 40px;
+  color: #333;
+} 
+.text h1 {
+  font-size: 48px;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+.text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #555;
+}
+.text .btn {
+  background-color: #1e88e5;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.text .btn:hover {
+  background-color: #1565c0;
+}
+
+
+/* FOOTER */
+footer{
+  display: flex;
+  justify-content: space-around; /* 👈 Centers nav items */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1976d2;
+}
+
+/*About Us*/
+
+.about{
+  width: 100%;
+  height: auto;
+  /* background-color: var(--blue); */
+  display: flex;
+  /* gap: 20px; */
+}
+.about>.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about > .text > h3{
+  text-transform: capitalize;
+}
+.about > .text >a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--blue);
+  padding: 3px 10px;
+  width: 105px;
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+.vision-mision{
+  display: flex;
+  flex-direction: row;
+  color: rgb(53, 53, 53);
+  box-shadow: 0px -1px 8px rgba(0,0,0,0.3);
+  margin-top: 20px;
+ }
+ .vision-mision > h2{
+  padding-bottom: 10px;
+ }
+ .mission{
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  /* background-color:var(--blue); */
+ }
+ .vision{
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  /* background-color: var(--blue2); */
+ }
+ .mission:hover{
+    box-shadow: 0px -1px 8px rgba(0,0,0,0.3);
+ }
+ .mission:hover h2{
+    color: var(--blue);
+ }
+ .vision:hover{
+  box-shadow: 0px -1px 8px rgba(0,0,0,0.3);
+ }
+ .vision:hover h2{
+    color: var(--blue);
+ }
+
+/*CUSTOM CONTACT*/
+
+.cont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.contact{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} 
+.contact h2 {
+  text-align: center;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="password"],
+.contact input[type="number"],
+.contact textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.contact > input:focus,
+.contact > textarea:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+/* Placeholder Color */
+::placeholder {
+  color: #888;
+}
+
+/* Submit Button */
+.contact input[type="submit"],
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover,
+.contact button:hover {
+  background-color: #1565c0;
+}
+
+/*CUSTOM HELP*/
+
+
+
+section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+
+.contact ul {
+  padding-left: 20px;
+}
+
+.report form input,
+.report form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.report form button {
+  background-color: #1e88e5;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report form button:hover {
+  background-color: #1565c0;
+}
+
+
+
+/* Text Below Form (e.g., login link) */
+.contact p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact p a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+.Faq{
+  padding: 10px 30px;
+  color: var(--blue);
+  text-align: center;
+}
+.faq{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.faq-item{  
+  width: 250px;
+  height: 310px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+
+}
+.faq-item h3 {
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  margin-bottom: 20px;
+  color: #525252;
+  font-weight: 500;
+}
+.Contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support > .Contact h2{
+  color: var(--blue) !important;
+}
+.help-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.help-container >.img{
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+  object-fit: cover;
+}
+.help-container > img{
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+.report{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.report > h2{
+  color: var(--blue);
+}
+

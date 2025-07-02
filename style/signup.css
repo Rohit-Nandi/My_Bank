@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+:root{
+  --blue:#1e88e5 ;
+  --white:#ffffff;
+  --black:#010101;
+  --deep-blue:#749BC2;
+  --blue2:#4682A9;
+  --gray:#8b8a8a;
+}
+ul {
+  list-style-type: disc;        /* Options: disc, circle, square, none */
+  margin-left: 20px;
+  padding-left: 0;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+img {
+  max-width: 100%;       /* Prevents overflow */
+  height: 100%;          /* Maintains aspect ratio */
+  object-fit: contain;        /* Removes bottom whitespace */
+}
+/*CUSTOM CSS*/
+.main{
+    width: auto;
+    height: 500px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+}    
+.img{
+    background-color: #ffffff;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*img*/
+
+
+
+/*login form*/
+.form-container{
+  height: 100%;
+  width: 350px;
+  margin:auto;
+  background-color: var(--white);
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: -2px 2px 7px rgb(178, 212, 250)
+}
+
+.form-container h2 {
+  text-align: center;
+  color: var(--blue);
+}
+
+form input[type="text"],
+form input[type="charecter"],
+form input[type="password"],
+form input[type="email"]{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: none;
+  background-color:rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  border: 1px solid black;
+}
+form input[type="text"],
+form input[type="charecter"]::placeholder,
+form input[type="password"]::placeholder{
+    color: var(--gray);
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid var(--blue);
+  outline: none;
+}
+form input:focus::placeholder{
+  color: var(--black);
+}
+
+form input[type="submit"],
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 750;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a{
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+
+
+

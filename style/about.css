@@ -1,0 +1,184 @@
+/*COMMON CSS*/
+/* Common CSS for Online Banking Platform */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+:root{
+  --blue:#1e88e5 ;
+  --white:#ffffff;
+  --black:#010101;
+  --deep-blue:#749BC2;
+  --blue2:#4682A9;
+}
+ul {
+  list-style-type: disc;        /* Options: disc, circle, square, none */
+  margin-left: 20px;
+  padding-left: 0;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+
+/*CUSTOM CSS*/
+.home{
+  min-height: 100vh;                /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: space-around; /* 👈 Centers nav items */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--blue);
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.nav-links > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links > li >a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}
+.logo {
+  color: var(--white);
+  font-weight: 700;
+  font-size:24px;
+  margin-bottom: 10px;
+}
+.logo > a{
+    color: var(--white);
+}
+.auth{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.auth > li >a{
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  background-color: var(--white);
+  padding: 3px 10px;
+}
+.auth >li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*CUSTOM BODY*/
+.about{
+  width: 100%;
+  height: auto;
+  /* background-color: var(--blue); */
+  display: flex;
+  padding: 10px 30px;
+}
+.about>.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text h1 {
+  font-size: 48px;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+.text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #555;
+}
+.about > .text > h3{
+  text-transform: capitalize;
+}
+.about > .text >a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--blue);
+  padding: 3px 10px;
+  width: 105px;
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+.content{
+    /* background-color: var(--blue); */
+    width: 100%;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+}
+h2{
+    margin-bottom: 10px;
+}
+.offer{
+    background-color: #fff;
+    width: 33.33%;
+    padding: 10px;
+}
+span{
+    font-weight: 500;
+}
+.choose{
+    background-color: #fff;
+    width: 33.33%;
+    padding: 10px;
+}
+.CTA{
+    background-color: #fff;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/*Custom Contact*/
+
+
+
+
+
+
+/* FOOTER */
+footer{
+  display: flex;
+  justify-content: space-around; /* 👈 Centers nav items */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1976d2;
+}
+
+
+
